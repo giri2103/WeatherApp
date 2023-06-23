@@ -6,7 +6,7 @@ Made this weather with the help of #openweathermap API this app can detect the g
 2.)Can Access Other Location Weather
 3.)Error handling codes
 
-#Techstack Used 
+# Techstack Used 
 1.)HTML
 2.)CSS
 3.)Javascript
