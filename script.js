@@ -6,6 +6,8 @@ const grantAccessContainer = document.querySelector(".grant-location-container")
 const searchForm = document.querySelector("[data-searchForm]");
 const loadingScreen = document.querySelector(".loading-container");
 const userInfoContainer = document.querySelector(".user-info-container");
+const errdisplay = document.querySelector(".error-display");
+
 
 //initially variables need???? 
 
@@ -159,6 +161,7 @@ searchForm.addEventListener("submit", (e) => {
 
 async function fetchSearchWeatherInfo(city) {
     loadingScreen.classList.add("active");
+    errdisplay.classList.remove("active");
     userInfoContainer.classList.remove("active");
     grantAccessContainer.classList.remove("active");
 
@@ -173,8 +176,12 @@ async function fetchSearchWeatherInfo(city) {
     }
     catch(err) {
         //hW
-        
-        alert("unable to fetch");
+        errdisplay.classList.add("active");
+        // alert("unable to fetch");
     }
 }
 
+function reload()
+{
+    location.reload();
+}
