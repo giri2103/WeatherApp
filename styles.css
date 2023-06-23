@@ -131,6 +131,7 @@ h1{
 
 .user-info-container{
     display: none;
+    
 }
 
 .user-info-container.active{
@@ -149,6 +150,7 @@ h1{
     width: 90%;
     max-width: 550px;
     height: 90%;
+    cursor: pointer;
 }
 
 .name{
